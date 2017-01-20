@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	color: #03C;
+}
+
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFF;
+}
