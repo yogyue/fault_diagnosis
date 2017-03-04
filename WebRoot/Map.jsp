@@ -1,27 +1,29 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <base href="<%=basePath%>">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>My JSP 'ChangePassword.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
+<head>
+<base href="<%=basePath%>">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My JSP 'ChangePassword.jsp' starting page</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 
-  </head>
-  <script>
+</head>
+<script>
 	function on_submit() {
 		if (Trim(form.LoginName.value) == "") {
 			alert("登录名不能为空，请输入登录名！");
@@ -86,25 +88,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     }
 	
 </script>
-  <body background="images/12.jpg" >
-   <form action="modifyuserdoservlet" name = "form" method= "post" onsubmit = "return on_submit();"> 
-   <table width="348" border="0" align="center">
-  <tr>
-    <td colspan="2" align="center">请输入预测时间</td>
-  </tr>
-   <tr>
-    <td align="right"></td>
-    <td>
-      
-    </td>
-  </tr>
-  <tr>
-    <td align="right"></td><td></td></tr><tr><td align="right"></td><td></td></tr><tr><td align="right"></td><td></td></tr><tr><td></td><td>
-    </td>
-  </tr>
-</table>
-</form>
-<div align="center"></div>
-<div align="center"></div>
-  </body>
+<body background="images/12.jpg">
+	<form action="modifyuserdoservlet" name="form" method="post"
+		onsubmit="return on_submit();">
+		<table width="348" border="0" align="center">
+			<tr>
+				<td colspan="2" align="center">预测结果将显示于此</td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td align="right"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+	<div align="center"></div>
+	<div align="center"></div>
+</body>
 </html>

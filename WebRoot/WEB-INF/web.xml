@@ -12,13 +12,13 @@
     <servlet-name>searchservlet</servlet-name>
     <servlet-class>servlet.searchservlet</servlet-class>
   </servlet>
-
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
     <servlet-name>PicsViewer</servlet-name>
     <servlet-class>function.PicsViewer</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>logincheckservlet</servlet-name>
     <url-pattern>/logincheckservlet</url-pattern>
@@ -27,11 +27,11 @@
     <servlet-name>searchservlet</servlet-name>
     <url-pattern>/searchservlet</url-pattern>
   </servlet-mapping>
-
   <servlet-mapping>
     <servlet-name>PicsViewer</servlet-name>
     <url-pattern>/PicsViewer</url-pattern>
   </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>Login.jsp</welcome-file>
   </welcome-file-list>
